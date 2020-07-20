@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<!--Brandon Hill 5/6/2020-->
+<html lang="en">
+<head>
+  <title>JavaScript Game!</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<div id="outerwrapper">
+		<header>
+			<h1>JavaScript Game</h1>
+		</header>
+		
+		<main>
+			<!--An attempt at flexbox-->
+			<div class="left">
+
+			<!--Problme 1-->
+			<h3>Using document.getElementById Properties.</h3>
+			<select id="selectProperty">
+				<option disabled selected value> -- select an option -- </option>
+				<option value="tContent" id="b1">Choice 1</option>
+				<option value="tChoice" id="b2">Choice 2</option>
+				<option value="tStyle" id="b3">Choice 3</option>
+				<option value="tQuery" id="b4">Choice 4</option>
+			</select>
+			<p id="outputProperty">Paragraph 1</p>
+			<p class="class1">Paragraph 2</p><br>
+			<button id="redo">Redo</button>
+			<p>In the above list, which choice sets the content of Paragraph 1 equal to the name of <br>
+				its value variable? (Hint: Looks like a variable)</p>
+			<ul>
+				<li><input type="radio" id="d1" name="radio1">Choice 1</li>
+				<li><input type="radio" id="d2" name="radio1">Choice 2</li>
+				<li><input type="radio" id="d3" name="radio1">Choice 3</li>
+				<li><input type="radio" id="d4" name="radio1">Choice 4</li>
+			</ul>
+			
+			
+			<button id="button1">Attempt</button>
+			
+			<p id="p3"></p>
+			<!--End of Problem 1-->
+
+
+
+			<!--Problem 2-->
+			<h3>Comparing: =, ==, and === .</h3>
+				<p>Find the integer.</p>	
+			
+				<select id="menu1">					
+					
+					<option value="int1">3</option>
+					<option value="bool1_1">1</option>
+					
+					<option value="bool1_2">7</option>
+				</select>
+				<select id="operators">
+					<option value="assigned_to">=</option>
+					<option value="double_equals">==</option>
+					<option value="triple_equals">===</option>
+				</select>
+				<select id="menu2">
+				
+					<option value="int2">3</option>
+					<option value="int_string">7</option>
+					<option value="bool2">1</option>
+					
+				</select>
+				
+				<button id="button2">Compare!</button>
+				<p id="results"></p>
+				<ul>
+					<li><input type="radio" id="v1" name="radio1">3</li>
+					<li><input type="radio" id="v2" name="radio1">1</li>
+					<li><input type="radio" id="v3" name="radio1">7</li>
+					
+				</ul>
+				<p id="p4"></p>
+				<button id="radio2">Check</button>
+				<!--End of Problem 2-->
+
+
+
+
+				<!--Problem 3-->
+				<h3>Comparing: != and !== .</h3>
+				<p>Find the integer.</p>			
+			
+				<select id="menu3">				
+					
+					<option value="value1">5</option>
+					<option value="value2">4</option>
+					<option value="value3">2</option>
+					
+				</select>
+				<select id="operators2">					
+					<option value="double_equals">!=</option>
+					<option value="triple_equals">!==</option>
+				</select>
+				<select id="menu4">
+				
+					<option value="value5">5</option>
+					<option value="value6">4</option>
+					<option value="value7">2</option>
+					
+				</select>
+				
+				<button id="button3">Compare!</button>
+				<p id="results2"></p>
+				<ul>
+					<li><input type="radio" id="v4" name="radio1">5</li>
+					<li><input type="radio" id="v5" name="radio1">4</li>
+					<li><input type="radio" id="v6" name="radio1">2</li>
+					
+				</ul>
+				<button id="radio3">Check</button>
+				<p id="p5"></p>
+				<img id="image1" src="correct.jpg" alt="Nice Job">
+				
+				<!--End of Problem 3-->
+
+
+				<br><br><br>
+			</div>
+
+			<div class="right">
+
+				<!--Problem 4-->
+				<h3>Comparing: &ge; &le; &lt; &gt;</h3>
+				<input type="number" id="num1">
+				<select id="operators3">
+					<!--Too late to fix this. RIP HTML semantics-->					
+					<option value="lt_equal"> <= </option>
+					<option value="gt_equal"> >= </option>
+					<option value="lt"> > </option>
+					<option value="gt"> < </option>
+				</select>
+				<input type="number" id="num2">
+				<p id="comp_result"></p>
+				<button id="button4">Compare!</button>
+				<!--End Problem 4-->
+
+				<!--Problem5-->
+				<h3>Spell your name!</h3>
+				<p id="yourName"></p>
+				<button id="spell">Spell!</button>
+				<!--End of Problem 5-->
+
+				<!--Problem 6-->
+				<h3>Math:</h3>
+				<input type="number" id="num3">
+				<select id="operators4">					
+					<option value="plus">+</option>
+					<option value="minus">-</option>
+					<option value="times">*</option>
+					<option value="divide">/</option>
+					<option value="modulus">%</option>
+					<option value="squared">**</option>
+				</select>
+				<input type="number" id="num4">
+				<button id="button5">Calculate</button>
+				<p id="result1"></p>
+				<!--End of Problem 6-->
+
+				<!--Problem 7-->
+				<h3>How many h3 tags are there?</h3>
+				<input  type="number" id="num5">
+				<button id="guess">Guess</button>
+				<p id="numOfH3"></p>
+				<!--End Problem 7-->
+			</div>
+		</main>
+			<footer>
+				Brandon Hill's Project			
+				
+			</footer>
+			
+	</div>
+	<script src="game.js">
+	</script>
+</body>
+
+
+</html>

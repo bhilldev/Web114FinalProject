@@ -1,0 +1,57 @@
+/* Brandon Hill 05/06/2020 */
+
+#outerwrapper {
+	width: 90%;
+	margin: 0 auto 0 auto;
+	background-color: #E3FDFD;
+}
+main {
+	margin: 1em;
+	display: flex;
+	
+}
+img {
+	visibility: hidden;
+	max-width: 100%;
+}
+.right{
+	margin-left: 1em;
+}
+
+.class1 {
+	text-decoration-color: green;
+}
+input {
+	margin-top: 1em;
+	margin-bottom: 1em;
+
+}
+ul {
+	list-style-type: none;
+}
+select {
+    
+    margin: 1em;
+}
+button {
+	display: block;
+}
+footer {
+	text-align: center;
+}
+
+@media only screen and (max-width: 64em) {
+	#outerwrapper {
+		 width: 100%;
+		 background: #CBF1F5;
+	}
+	main {
+		display: block;
+	}
+}
+@media only screen and (max-width: 37.5em){
+	#outerwrapper {
+		width: 100%;
+		background: #A6E3E9;
+	}
+}
